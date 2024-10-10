@@ -1,0 +1,32 @@
+.shape {
+  height: 0;
+  width: 0;
+  border-bottom: 30px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 14vh;
+  padding-bottom: 15vh;
+}
+
+.cartCollectionContainer {
+  width: 80%;
+}
+
+.cartInput {
+  border: 1px solid #80808047;
+  background-color: aliceblue;
+}
+
+.cartInputError {
+  color: red;
+  margin-bottom: 3px;
+}
+
+.cartInputContainer {
+  margin-top: 10px;
+}

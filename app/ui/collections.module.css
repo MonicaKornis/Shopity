@@ -1,0 +1,172 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background-color: #d6f4e0d9;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 80%;
+}
+
+.grid::after {
+  content: "";
+  flex: 12;
+}
+
+.tableItem {
+  flex: 20%;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+.select {
+  max-height: 25px;
+  max-width: 100px;
+  min-width: 75px;
+  margin-right: 10px;
+}
+
+.paginationContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-width: 363px;
+  max-width: 500px;
+  width: 99%;
+  margin-top: 32px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 50px;
+    max-width: 250px;
+  }
+}
+
+.paginationButton {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  width: 35px;
+  height: 20px;
+  border: 1px solid #004cba;
+  border-radius: 3px;
+  margin: 0px 11px 0px 11px;
+  padding: 11px;
+  @media (max-width: 460px) {
+    margin: 0px 10px 0px 0px;
+  }
+}
+
+.paginationNumPerPageContainer {
+  display: flex;
+}
+
+.paginationLabel {
+  margin-right: 7px;
+}
+
+.paginationButtonContainer {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.searchAndFilterContainer {
+  width: 80%;
+  max-width: 782px;
+  min-width: 150px;
+  @media (max-width: 560px) {
+    width: 92%;
+  }
+}
+
+.filterContainer {
+  display: flex;
+  margin-bottom: 40px;
+  @media (max-width: 560px) {
+    flex-direction: column;
+  }
+}
+
+.filterLabel {
+  margin-right: 6px;
+}
+
+.categoryBadge {
+  height: 24px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #98ce84;
+  font-size: 11.5px;
+  width: 83px;
+  background-color: #780d6d;
+}
+
+.addToCartButton {
+  height: 24px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #acfbab;
+  font-size: 11.5px;
+  width: 98px;
+  background-color: #0a3e0a;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.removeFromCartButton {
+  height: 24px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #acfbab;
+  font-size: 11.5px;
+  width: 146px;
+  background-color: #0a3e0a;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.addToCartButtonDisabled {
+  height: 24px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 11.5px;
+  width: 83px;
+  background-color: #ab9d9dcc;
+  margin-top: 6px;
+}
+
+.searchBar {
+  width: 214px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  height: 29px;
+  display: flex;
+  align-self: flex-end;
+  font-size: 12px;
+  padding: 9px 36px 7px 18px;
+  border: 1px solid #80808047;
+  margin-bottom: 10px;
+}
+
+.searchBar::placeholder {
+  color: #3f3c3c85;
+}
